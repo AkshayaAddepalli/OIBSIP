@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume Builder - SkillBridge</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    padding:40px;
+}
+
+h1{
+    text-align:center;
+    color:#60a5fa;
+    margin-bottom:30px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.form-section,
+.resume-section{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:8px;
+    background:#334155;
+    color:white;
+}
+
+textarea{
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#3b82f6;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2563eb;
+}
+
+.resume-preview h2{
+    color:#60a5fa;
+    margin-bottom:10px;
+}
+
+.resume-preview p{
+    margin-bottom:10px;
+    line-height:1.6;
+}
+
+.back{
+    text-align:center;
+    margin-top:30px;
+}
+
+.back a{
+    text-decoration:none;
+    background:#334155;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+}
+
+@media(max-width:768px){
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<h1>Resume Builder</h1>
+
+<div class="container">
+
+    <div class="form-section">
+
+        <input type="text" id="name" placeholder="Full Name">
+
+        <input type="email" id="email" placeholder="Email">
+
+        <input type="text" id="phone" placeholder="Phone Number">
+
+        <input type="text" id="skills" placeholder="Skills">
+
+        <textarea id="education" rows="4"
+        placeholder="Education"></textarea>
+
+        <textarea id="experience" rows="4"
+        placeholder="Experience"></textarea>
+
+        <button onclick="generateResume()">
+            Generate Resume
+        </button>
+
+    </div>
+
+    <div class="resume-section">
+
+        <div class="resume-preview">
+
+            <h2 id="rname">Your Name</h2>
+
+            <p id="remail">Email</p>
+
+            <p id="rphone">Phone</p>
+
+            <hr><br>
+
+            <h3>Skills</h3>
+            <p id="rskills">-</p>
+
+            <h3>Education</h3>
+            <p id="reducation">-</p>
+
+            <h3>Experience</h3>
+            <p id="rexperience">-</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="back">
+    <a href="indexprac.html">← Back to Home</a>
+</div>
+
+<script>
+
+function generateResume(){
+
+    document.getElementById("rname").innerText =
+    document.getElementById("name").value;
+
+    document.getElementById("remail").innerText =
+    document.getElementById("email").value;
+
+    document.getElementById("rphone").innerText =
+    document.getElementById("phone").value;
+
+    document.getElementById("rskills").innerText =
+    document.getElementById("skills").value;
+
+    document.getElementById("reducation").innerText =
+    document.getElementById("education").value;
+
+    document.getElementById("rexperience").innerText =
+    document.getElementById("experience").value;
+}
+
+</script>
+
+</body>
+</html>

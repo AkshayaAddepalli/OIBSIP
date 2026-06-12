@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillBridge Internships</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    min-height:100vh;
+}
+
+header{
+    background:#111827;
+    padding:20px 8%;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}
+
+header h1{
+    color:#60a5fa;
+    font-size:38px;
+}
+
+header p{
+    margin-top:10px;
+    color:#cbd5e1;
+}
+
+.internships{
+    padding:80px 8%;
+}
+
+.internships h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.internship-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:50px;
+    color:#60a5fa;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cbd5e1;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#3b82f6;
+    color:white;
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:8px;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#2563eb;
+}
+
+.back{
+    text-align:center;
+    padding-bottom:60px;
+}
+
+.back a{
+    background:#334155;
+    color:white;
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:8px;
+}
+
+.back a:hover{
+    background:#475569;
+}
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:30px;
+    }
+
+    .internships h2{
+        font-size:32px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>SkillBridge</h1>
+    <p>Explore Internship Opportunities and Build Your Career</p>
+</header>
+
+<section class="internships">
+
+    <h2>Available Internships</h2>
+
+    <div class="internship-grid">
+
+        <div class="card">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Work on websites using HTML, CSS, JavaScript and React.</p>
+            <a href="apply.html" class="btn">Apply Now</a>
+        </div>
+
+        <div class="card">
+            <i class="fab fa-python"></i>
+            <h3>Python Development</h3>
+            <p>Build automation scripts, web apps and AI projects.</p>
+            <a href="apply.html" class="btn">Apply Now</a>
+        </div>
+
+        <div class="card">
+            <i class="fab fa-java"></i>
+            <h3>Java Development</h3>
+            <p>Create enterprise applications using Java and Spring.</p>
+            <a href="apply.html" class="btn">Apply Now</a>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-palette"></i>
+            <h3>UI/UX Designing</h3>
+            <p>Design modern user interfaces using Figma and Adobe XD.</p>
+            <a href="apply.html" class="btn">Apply Now</a>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Cyber Security</h3>
+            <p>Learn ethical hacking, penetration testing and security.</p>
+            <a href="apply.html" class="btn">Apply Now</a>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-database"></i>
+            <h3>Data Science</h3>
+            <p>Analyze data using Python, Machine Learning and AI.</p>
+            <a href="apply.html" class="btn">Apply Now</a>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>App Development</h3>
+            <p>Create Android and iOS applications using modern tools.</p>
+            <a href="apply.html" class="btn">Apply Now</a>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud Computing</h3>
+            <p>Work with AWS, Azure and cloud infrastructure services.</p>
+            <a href="apply.html" class="btn">Apply Now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="back">
+    <a href="indexprac.html">← Back to Home</a>
+</div>
+
+</body>
+</html>

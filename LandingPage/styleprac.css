@@ -1,0 +1,369 @@
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111827;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#60a5fa;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#60a5fa;
+}
+
+.btn{
+    background:#3b82f6;
+    color:white;
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:8px;
+    transition:0.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    background:#2563eb;
+}
+
+.btn-outline{
+    border:2px solid #60a5fa;
+    color:white;
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn-outline:hover{
+    background:#60a5fa;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    padding:80px 8%;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-size:64px;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.hero-content p{
+    font-size:20px;
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:550px;
+    border-radius:20px;
+    box-shadow:0 0 30px rgba(96,165,250,0.4);
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.features{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.features h2{
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.feature-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1e293b;
+    padding:35px;
+    border-radius:18px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:50px;
+    color:#60a5fa;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cbd5e1;
+    line-height:1.7;
+}
+
+/* =========================
+   INFO SECTIONS
+========================= */
+
+.info-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    padding:100px 8%;
+}
+
+.reverse{
+    flex-direction:row-reverse;
+}
+
+.info-image{
+    flex:1;
+}
+
+.info-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+.info-content{
+    flex:1;
+}
+
+.info-content h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.info-content p{
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    padding:80px 8%;
+    background:#111827;
+}
+
+.stat-box{
+    text-align:center;
+}
+
+.stat-box h2{
+    font-size:48px;
+    color:#60a5fa;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    font-size:18px;
+}
+
+/* =========================
+   REVIEWS
+========================= */
+
+.reviews{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.reviews h2{
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.review-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.review-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:18px;
+}
+
+.review-card p{
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+/* =========================
+   CTA SECTION
+========================= */
+
+.cta{
+    text-align:center;
+    padding:100px 8%;
+}
+
+.cta h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:40px;
+}
+
+footer h3{
+    margin-bottom:10px;
+    color:#60a5fa;
+}
+
+.socials{
+    margin:20px 0;
+}
+
+.socials i{
+    font-size:24px;
+    margin:0 12px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.socials i:hover{
+    color:#60a5fa;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .info-section{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .reverse{
+        flex-direction:column;
+    }
+
+    .cta h2{
+        font-size:36px;
+    }
+}

@@ -1,0 +1,148 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2,
+        #6dd5ed
+    );
+    background-size:300% 300%;
+    animation:bgMove 10s ease infinite;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.card{
+    width:430px;
+    padding:35px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.3);
+    box-shadow:0 8px 32px rgba(0,0,0,0.25);
+    color:white;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:32px;
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+input,
+select{
+    width:100%;
+    padding:13px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    background:rgba(255,255,255,0.85);
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    box-shadow:0 0 10px #ffffff;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:10px;
+    border:none;
+    border-radius:12px;
+    background:#36ce75;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.clear-btn{
+    margin-top:10px;
+    background:#ff5252;
+}
+
+.result-box{
+    margin-top:25px;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    background:rgba(255,255,255,0.2);
+}
+
+.result-box h3{
+    margin-bottom:10px;
+}
+
+#result{
+    font-size:28px;
+    font-weight:bold;
+}
+
+#status{
+    margin-top:10px;
+    font-size:18px;
+    font-weight:600;
+}
+
+#datetime{
+    text-align:center;
+    margin-top:20px;
+    font-size:14px;
+    opacity:0.9;
+}
+.clear-btn{
+    margin-top:10px;
+    background:#f25050;
+}
+
+.clear-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+#status{
+    margin-top:10px;
+    font-size:18px;
+    font-weight:600;
+}
+
+#datetime{
+    text-align:center;
+    margin-top:20px;
+    font-size:14px;
+    opacity:0.95;
+    line-height:1.8;
+}
